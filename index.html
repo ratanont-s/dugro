@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DRUGO ALL N ONE</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <!-- Jquery js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Fullpage js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"
+        integrity="sha256-C19V3BEZT3jDhm7hctby8ZYhoXDJr0DxagpwB4RIpWc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.extensions.min.js"
+        integrity="sha256-yIZLY/2TvWsNka8CxUIDNg9XiVKq+rWCIos108gK/5c=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <span>
+                    <img src="./dist/images/logo-header.png" alt="">
+                </span>
+                <span>
+                    <a href="#">
+                        <img src="./dist/images/btn-lazada.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main id="fullpage">
+        <section class="section " id="section0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-auto">
+                        <img src="./dist/images/milk-box.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg text-center">
+                        <div>
+                            <img src="./dist/images/logo-section-0.png" alt="" class="img-fluid">
+                        </div>
+                        <h1 class="text-title">ครบ 5 คุณประโยชน์</h1>
+                        <div>
+                            <img src="./dist/images/slogan.png" alt="" class="img-fluid">
+                        </div>
+                        <span class="badge badge-secondary">ควรกินอาหารหลากหลายครบ 5 หมู่
+                            ในสัดส่วนที่เหมาะสมเป็นประจำ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section1">
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, autem iste cumque rem quo earum, quae,
+                    sed quas modi placeat ratione. Numquam vel maiores molestias consequuntur dolore adipisci natus
+                    minima.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="section2">
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, autem iste cumque rem quo earum, quae,
+                    sed quas modi placeat ratione. Numquam vel maiores molestias consequuntur dolore adipisci natus
+                    minima.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, autem iste cumque rem quo earum, quae,
+                    sed quas modi placeat ratione. Numquam vel maiores molestias consequuntur dolore adipisci natus
+                    minima.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="section4">
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, autem iste cumque rem quo earum, quae,
+                    sed quas modi placeat ratione. Numquam vel maiores molestias consequuntur dolore adipisci natus
+                    minima.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <!-- Script -->
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+            });
+        });
+    </script>
+</body>
+
+</html>

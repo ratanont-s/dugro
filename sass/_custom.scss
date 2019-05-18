@@ -1,0 +1,14 @@
+main {
+    background: url("../images/bg-body.jpg") no-repeat center top;
+    background-size: 100% auto;
+    height: auto !important;
+}
+
+.section {
+    &#section0 {
+        .text-title {
+            color: $secondary;
+            @include rfs(80);
+        }
+    }
+}
