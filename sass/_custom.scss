@@ -15,6 +15,20 @@ main {
     }
 }
 
+.btn-lazada {
+    display: inline-block;
+    @include transition($transition-base);
+
+    img {
+        border-radius: 10rem;
+        box-shadow: 0px 3px 3px rgba(black, .5);
+    }
+
+    @include hover {
+        transform: scale(1.05);
+        @include transition($transition-base);
+    }
+}
 
 #section0 {
     .section {
