@@ -1,9 +1,8 @@
 main {
-    background: url("../images/bg-body.jpg") no-repeat center top;
-    background-size: 100% 100%;
-    height: auto !important;
-
     .section {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -31,6 +30,8 @@ main {
 }
 
 #section0 {
+    background-image: url('../images/bg-sec0.jpg');
+
     .section {
         &-left {
             height: 100%;
@@ -77,6 +78,8 @@ main {
 }
 
 #section1 {
+    background-image: url('../images/bg-sec1.jpg');
+
     .section {
         &-left {
             text-align: center;
@@ -115,6 +118,7 @@ main {
 }
 
 #section2 {
+    background-image: url('../images/bg-sec2.jpg');
     text-align: center;
 
     .container {
@@ -154,6 +158,7 @@ main {
 }
 
 #section3 {
+    background-image: url('../images/bg-sec3.jpg');
     justify-content: flex-start;
 
     .section {
@@ -178,6 +183,7 @@ main {
 }
 
 #section4 {
+    background-image: url('../images/bg-sec4.jpg');
     text-align: center;
 
     .section {
