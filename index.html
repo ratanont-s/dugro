@@ -1,180 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DRUGO ALL N ONE</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
     <!-- Style css -->
-    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css" />
     <!-- Jquery js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <script src="./dist/js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/aos.js"></script>
+    <script src="./dist/js/slick.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        AOS.init();
+        $(".carousel").carousel({
+          interval: false
+        });
+      });
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-</head>
+  </head>
 
-<body>
+  <body data-spy="scroll" data-target="#nav-dot" data-offset="0">
+    <div id="nav-dot" class="list-group">
+      <a class="list-group-item" href="#section0">
+        <span class="list-group-dot"></span>
+      </a>
+      <a class="list-group-item" href="#section1">
+        <span class="list-group-dot"></span>
+      </a>
+      <a class="list-group-item" href="#section2">
+        <span class="list-group-dot"></span>
+      </a>
+      <a class="list-group-item" href="#section3">
+        <span class="list-group-dot"></span>
+      </a>
+      <a class="list-group-item" href="#section4">
+        <span class="list-group-dot"></span>
+      </a>
+    </div>
     <header class="header">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <span>
-                    <img src="./dist/images/logo-header.png" alt="">
-                </span>
-                <span>
-                    <a href="#" class="btn-lazada">
-                        <img src="./dist/images/btn-lazada.png" alt="">
-                    </a>
-                </span>
-            </div>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <span>
+            <img src="./dist/images/logo-header.png" alt="" />
+          </span>
+          <span>
+            <a href="#" class="btn-lazada">
+              <img src="./dist/images/btn-lazada.png" alt="" />
+            </a>
+          </span>
         </div>
+      </div>
     </header>
-    <main id="fullpage">
-        <section class="section" id="section0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-auto">
-                        <div class="section-left">
-                            <img src="./dist/images/milk-box.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="section-right">
-                            <div class="section-right-top">
-                                <div class="section-right-img">
-                                    <img src="./dist/images/logo-section-0.png" alt="" class="img-fluid">
-                                </div>
-                                <h1 class="section-right-textbig">ครบ 5 คุณประโยชน์</h1>
-                                <div class="section-right-textimg">
-                                    <img src="./dist/images/slogan.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="section-right-badge">
-                                <span>ควรกินอาหารหลากหลายครบ 5 หมู่ ในสัดส่วนที่เหมาะสมเป็นประจำ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main>
+      <section class="section" id="section0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="section-left">
+                <img
+                  src="./dist/images/milk-box.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
             </div>
-        </section>
-        <section class="section" id="section1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="section-left">
-                            <div class="section-left-title">
-                                <img src="./dist/images/title-sec1.png" alt="">
-                            </div>
-                            <div class="section-left-video">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item"
-                                        src="https://www.youtube.com/embed/J5ubVgjdfCc" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-right">
-                            <div class="section-right-top">
-                                <img src="./dist/images/rice-tray.png" alt="">
-                            </div>
-                            <div class="section-right-badge">
-                                <span>เพราะอาหาร 5 หมู่ สำคัญต่อเด็กวัยเจริญเติบโต<br>เสริมด้วยนมยูเอชที Dugro All N
-                                    One</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="section-right">
+                <div class="section-right-top">
+                  <div class="section-right-img">
+                    <img
+                      src="./dist/images/logo-section-0.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h1 class="section-right-textbig">ครบ 5 คุณประโยชน์</h1>
+                  <div class="section-right-textimg">
+                    <img
+                      src="./dist/images/slogan.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section" id="section2">
-            <div class="container">
-                <div class="section-top">
-                    <img src="./dist/images/title-sec2.png" alt="">
-                    <img src="./dist/images/logo-sec2.png" alt="">
-                </div>
-                <div class="section-middle">
-                    <div class="section-middle-circle">
-                        <img src="./dist/images/circle-bg.png" alt="">
-                    </div>
-                    <div class="section-middle-slide">
-                        <img src="./dist/images/circle-1.png" alt="">
-                    </div>
-                </div>
-                <div class="section-bottom">*โอเมก้า 3,6,9, วิตามินบี12, แคลเซียม, ใยอาหาร,
-                    วิตามินและเกลือแร่อื่นๆ</div>
+            <div class="col-lg-6 offset-lg-6 order-3 order-lg-3">
+              <div class="section-badge">
+                <span
+                  >ควรกินอาหารหลากหลายครบ 5 หมู่
+                  ในสัดส่วนที่เหมาะสมเป็นประจำ</span
+                >
+              </div>
             </div>
-        </section>
-        <section class="section" id="section3">
-            <div class="section-header">
-                <h1>
-                    <small>คุณประโยชน์ของ</small>
-                    อาหารสำคัญ 5 หมู่
-                </h1>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-left">
+                <div class="section-left-title">
+                  <img src="./dist/images/title-sec1.png" alt="" />
+                </div>
+                <div class="section-left-video">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      class="embed-responsive-item"
+                      src="https://www.youtube.com/embed/J5ubVgjdfCc"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-lg">
-                        <img src="./dist/images/cloud-1.png" alt="">
-                    </div>
-                    <div class="col-lg">
-                        <img src="./dist/images/cloud-2.png" alt="">
-                    </div>
-                    <div class="col-lg">
-                        <img src="./dist/images/cloud-3.png" alt="">
-                    </div>
-                    <div class="col-lg">
-                        <img src="./dist/images/cloud-4.png" alt="">
-                    </div>
-                    <div class="col-lg">
-                        <img src="./dist/images/cloud-5.png" alt="">
-                    </div>
+            <div class="col-lg-6">
+              <div class="section-right">
+                <div class="section-right-top">
+                  <img src="./dist/images/rice-tray.png" data-aos="zoom-in" />
+                  <div class="disk">
+                    <span
+                      class="disk-item"
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      ><img src="./dist/images/disk1.png"
+                    /></span>
+                    <span
+                      class="disk-item"
+                      data-aos="zoom-in-right"
+                      data-aos-delay="600"
+                      ><img src="./dist/images/disk2.png"
+                    /></span>
+                    <span
+                      class="disk-item"
+                      data-aos="zoom-in-left"
+                      data-aos-delay="900"
+                      ><img src="./dist/images/disk3.png"
+                    /></span>
+                    <span
+                      class="disk-item"
+                      data-aos="zoom-in-left"
+                      data-aos-delay="1200"
+                      ><img src="./dist/images/disk4.png"
+                    /></span>
+                  </div>
                 </div>
-                <div>
-                    <img src="./dist/images/cloud-2-big.png" alt="">
+                <div class="section-right-badge">
+                  <span
+                    >เพราะอาหาร 5 หมู่ สำคัญต่อเด็กวัยเจริญเติบโต<br />เสริมด้วยนมยูเอชที
+                    Dugro All N One</span
+                  >
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section" id="section4">
-            <div class="container">
-                <div class="section-title">
-                    <img src="./dist/images/title-sec4.png" alt="">
-                </div>
-                <div class="row no-gutters align-items-center">
-                    <div class="col-2 col-lg-4">
-                        <div class="section-left">
-                            <img src="./dist/images/cow.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section2">
+        <div class="container">
+          <div class="section-top">
+            <img src="./dist/images/title-sec2.png" alt="" />
+            <img src="./dist/images/logo-sec2.png" alt="" />
+          </div>
+          <div class="section-middle">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="section-middle-circle">
+                <ol class="circle-hover carousel-indicators">
+                  <li
+                    class="circle-hover-item active"
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                  >
+                    <img src="./dist/images/circle-hover1.png" />
+                  </li>
+                  <li
+                    class="circle-hover-item"
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  >
+                    <img src="./dist/images/circle-hover2.png" />
+                  </li>
+                  <li
+                    class="circle-hover-item"
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  >
+                    <img src="./dist/images/circle-hover3.png" />
+                  </li>
+                  <li
+                    class="circle-hover-item"
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="3"
+                  >
+                    <img src="./dist/images/circle-hover4.png" />
+                  </li>
+                  <li
+                    class="circle-hover-item"
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="4"
+                  >
+                    <img src="./dist/images/circle-hover5.png" />
+                  </li>
+                </ol>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-5">
+                      <img src="./dist/images/circle-1.png" />
+                    </div>
+                    <div class="col-7">
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img
+                            src="./dist/images/nutrients-1-1.png"
+                            class="d-block mx-auto"
+                          />
+                          มีส่วนช่วยในการทำงาน ของระบบประสาทและสมอง
                         </div>
-                    </div>
-                    <div class="col-8 col-lg-4">
-                        <div class="section-center">
-                            <span><img src="./dist/images/milk-1.png" alt=""></span>
-                            <span><img src="./dist/images/milk-2.png" alt=""></span>
+                        <div>
+                          <img src="./dist/images/nutrients-1-2.png" alt="" />
                         </div>
+                      </div>
                     </div>
-                    <div class="col-2 col-lg-4">
-                        <div class="section-right">
-                            <img src="./dist/images/boy.png" alt="">
-                        </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <img src="./dist/images/circle-2.png" />
                     </div>
+                    <div class="col-lg-7">
+                      <img
+                        src="./dist/images/nutrients-2.png"
+                        class="d-block mx-auto"
+                        alt=""
+                      />
+                      นมโคแท้ แหล่งของแคลเซียม อย่างดีจากธรรมชาติ
+                    </div>
+                  </div>
                 </div>
-                <div class="section-bottom">
-                    <a href="#" class="btn-lazada">
-                        <img src="./dist/images/btn-lazada-2.png" alt="">
-                    </a>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <img src="./dist/images/circle-3.png" />
+                    </div>
+                    <div class="col-lg-7">
+                      <img
+                        src="./dist/images/nutrients-3.png"
+                        class="d-block mx-auto"
+                        alt=""
+                      />
+                      วิตามินเอ, วิตามินบี6, วิตามินบี12 วิตามินดี, วิตามินเค,
+                      วิตามินซี, แคลเซียม, ธาตุเหล็ก, ฟอสฟอรัส, กรดโฟลิก
+                    </div>
+                  </div>
                 </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <img src="./dist/images/circle-4.png" />
+                    </div>
+                    <div class="col-lg-7">
+                      <img
+                        src="./dist/images/nutrients-4.png"
+                        class="d-block mx-auto"
+                        alt=""
+                      />
+                      0.03% ครบทั้ง 5 สี สีขาว(ลูกแพร์) สีม่วง(ลูกพลัม)
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <img src="./dist/images/circle-5.png" />
+                    </div>
+                    <div class="col-lg-7">
+                      <img
+                        src="./dist/images/nutrients-5.png"
+                        class="d-block mx-auto"
+                        alt=""
+                      />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-        </section>
+          </div>
+          <div class="section-bottom">
+            *โอเมก้า 3,6,9, วิตามินบี12, แคลเซียม, ใยอาหาร,
+            วิตามินและเกลือแร่อื่นๆ
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section3">
+        <div class="section-header">
+          <h1>
+            <small>คุณประโยชน์ของ</small>
+            อาหารสำคัญ 5 หมู่
+          </h1>
+        </div>
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a
+                class="nav-link pink active"
+                id="pills-pink-tab"
+                data-toggle="pill"
+                href="#pills-pink"
+                >1. โปรตีน</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link blue"
+                id="pills-blue-tab"
+                data-toggle="pill"
+                href="#pills-blue"
+                >2. คาร์โบไฮเดรต</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link green"
+                id="pills-green-tab"
+                data-toggle="pill"
+                href="#pills-green"
+                >3. วิตามินจากผลไม้</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link orange"
+                id="pills-orange-tab"
+                data-toggle="pill"
+                href="#pills-orange"
+                >4. วิตามินและเกลือแร่จากผัก</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link yellow"
+                id="pills-yellow-tab"
+                data-toggle="pill"
+                href="#pills-yellow"
+                >5. ไขมันจากพืชและสัตว์</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-pink">
+              <div class="cloud-big pink">
+                <h1>1. โปรตีน</h1>
+                <ul>
+                  <li>ได้แก่ เนื้อสัตว์ ไข่ นม ถั่ว</li>
+                  <li>
+                    จำเป็นต่อการเจริญเติบโตของร่างกาย และซ่อมแซมส่วนที่สึกหรอ
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-blue">
+              <div class="cloud-big blue">
+                <h1>2. คาร์โบไฮเดรต</h1>
+                <ul>
+                  <li>ได้แก่ ข้าว แป้ง น้ำตาล เผือก มัน</li>
+                  <li>
+                    ให้พลังงาน
+                  </li>
+                  <li>
+                    ช่วยเผาผลาญไขมันให้ร่างกาย <br />
+                    ให้เป็นไปตามปกติ
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-green">
+              <div class="cloud-big green">
+                <h1>3. วิตามินจากผลไม้</h1>
+                <ul>
+                  <li>
+                    เสริมสร้างการทำงานของระบบต่างๆในร่างกาย เช่น วิตามินซี
+                    ช่วยในกระบวนการต่อต้านอนุมูลอิสระ วิตามินเอ
+                    ช่วยในเรื่องการมองเห็น
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-orange">
+              <div class="cloud-big orange">
+                <h1>4. วิตามินและเกลือแร่จากผัก</h1>
+                <ul>
+                  <li>
+                    เช่น วิตามินบี1, บี6, บี12 ช่วยบำรุงระบบประสาทและสมอง
+                    วิตามินบี3 ช่วยบำรุงผิวพรรณ แคลเซียม และฟอสฟอรัส
+                    ช่วยบำรุงกระดูกและฟัน
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-yellow">
+              <div class="cloud-big yellow">
+                <h1>5. ไขมันจากพืชและสัตว์</h1>
+                <ul>
+                  <li>
+                    ช่วยเสริมสร้างระบบการทำงานต่างๆ ของร่างกาย ด้วย ไขมันในกลุ่ม
+                    โอเมก้า 3,6,9
+                  </li>
+                  <li>
+                    ให้พลังงานและความอบอุ่น แก่ร่างกาย
+                  </li>
+                  <li>
+                    ช่วยการดูดซึมวิตามินที่ละลายในไขมันในลำไส้ ได้แก่ วิตามินเอ,
+                    ดี, อี, เค
+                  </li>
+                  <li>ช่วยให้อิ่มท้องนาน</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section4">
+        <div class="container">
+          <div class="section-title">
+            <img
+              src="./dist/images/title-sec4.png"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-delay="900"
+            />
+          </div>
+          <div class="row no-gutters align-items-center my-3 my-lg-0">
+            <div class="col-2 col-lg-4">
+              <div class="section-left">
+                <img
+                  src="./dist/images/cow.png"
+                  alt=""
+                  data-aos="zoom-in-left"
+                  data-aos-delay="600"
+                />
+              </div>
+            </div>
+            <div class="col-8 col-lg-4">
+              <div class="section-center">
+                <span
+                  ><img src="./dist/images/milk-1.png" alt="" data-aos="zoom-in"
+                /></span>
+                <span
+                  ><img
+                    src="./dist/images/milk-2.png"
+                    alt=""
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                /></span>
+              </div>
+            </div>
+            <div class="col-2 col-lg-4">
+              <div class="section-right">
+                <img
+                  src="./dist/images/boy.png"
+                  alt=""
+                  data-aos="zoom-in-right"
+                  data-aos-delay="600"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="section-bottom">
+            <a href="#" class="btn-lazada">
+              <img src="./dist/images/btn-lazada-2.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

@@ -1,7 +1,8 @@
-@import './font';
-@import './variables';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import './fullpage';
-@import './header';
+@import "./font";
+@import "./variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./slick/slick";
+@import "./aos/aos";
+@import "./header";
 
-@import './custom';
+@import "./custom";
