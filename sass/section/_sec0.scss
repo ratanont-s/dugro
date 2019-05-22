@@ -1,0 +1,84 @@
+#section0 {
+    background-image: url("../images/bg-sec0.jpg");
+
+    .section {
+        &-left {
+            @include media-breakpoint-up(lg) {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &-right {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            &-top {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            &-img {
+                margin-bottom: -2rem;
+            }
+
+            &-textbig {
+                @include rfs(80);
+                color: $warning;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-badge {
+            text-align: center;
+
+            span {
+                display: inline-block;
+                @include rfs(20);
+                background-color: $warning;
+                color: $secondary;
+                border-radius: 10rem;
+                padding: 0.25rem 1.25rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        background-image: url("../images/bg-mb-1.jpg");
+        padding-top: 40px;
+
+        .section-right-img {
+            transform: scale(0.5);
+            margin-bottom: -50px;
+        }
+
+        .section-right-textbig {
+            margin-bottom: 0;
+            margin-bottom: -20px;
+        }
+
+        .section-right-textimg {
+            transform: scale(0.5);
+        }
+
+        .section-left img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .section-badge {
+            text-align: center;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
