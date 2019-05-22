@@ -3947,29 +3947,29 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 #section3 .section-mb .accordion .card { background-color: unset; border-width: 0; background-repeat: no-repeat; background-position: center top; background-size: auto 100%; margin-bottom: 1.5rem; }
 
-#section3 .section-mb .accordion .card[aria-expanded=true] { background-size: 100% 100%; }
+#section3 .section-mb .accordion .card[aria-expanded=true] { background-size: 100% 100%; -webkit-animation: none; animation: none; }
 
 #section3 .section-mb .accordion .card-header { background-color: unset; border-bottom-width: 0; text-align: center; min-height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; color: white; font-size: 30px; }
 
 #section3 .section-mb .accordion .card-body { padding-left: 2rem; padding-right: 3.5rem; padding-bottom: 2.5rem; font-size: 24px; color: rgba(0, 0, 0, 0.3); }
 
-#section3 .section-mb .accordion .card-pink { background-image: url("../../dist/images/cloud-1.png"); }
+#section3 .section-mb .accordion .card-pink { background-image: url("../../dist/images/cloud-1.png"); -webkit-animation: cloud 10s linear infinite alternate; animation: cloud 10s linear infinite alternate; }
 
 #section3 .section-mb .accordion .card-pink[aria-expanded=true] { background-image: url("../../dist/images/cloud-focus-pink.png"); }
 
-#section3 .section-mb .accordion .card-blue { background-image: url("../../dist/images/cloud-2.png"); }
+#section3 .section-mb .accordion .card-blue { background-image: url("../../dist/images/cloud-2.png"); -webkit-animation: cloud2 10s linear infinite alternate; animation: cloud2 10s linear infinite alternate; }
 
 #section3 .section-mb .accordion .card-blue[aria-expanded=true] { background-image: url("../../dist/images/cloud-focus-blue.png"); }
 
-#section3 .section-mb .accordion .card-green { background-image: url("../../dist/images/cloud-3.png"); }
+#section3 .section-mb .accordion .card-green { background-image: url("../../dist/images/cloud-3.png"); -webkit-animation: cloud 8s linear infinite alternate; animation: cloud 8s linear infinite alternate; }
 
 #section3 .section-mb .accordion .card-green[aria-expanded=true] { background-image: url("../../dist/images/cloud-focus-green.png"); }
 
-#section3 .section-mb .accordion .card-orange { background-image: url("../../dist/images/cloud-4.png"); }
+#section3 .section-mb .accordion .card-orange { background-image: url("../../dist/images/cloud-4.png"); -webkit-animation: cloud2 8s linear infinite alternate; animation: cloud2 8s linear infinite alternate; }
 
 #section3 .section-mb .accordion .card-orange[aria-expanded=true] { background-image: url("../../dist/images/cloud-focus-orange.png"); }
 
-#section3 .section-mb .accordion .card-yellow { background-image: url("../../dist/images/cloud-5.png"); }
+#section3 .section-mb .accordion .card-yellow { background-image: url("../../dist/images/cloud-5.png"); -webkit-animation: cloud 6s linear infinite alternate; animation: cloud 6s linear infinite alternate; }
 
 #section3 .section-mb .accordion .card-yellow[aria-expanded=true] { background-image: url("../../dist/images/cloud-focus-yellow.png"); }
 
@@ -3981,15 +3981,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 @media (max-width: 1200px) { #section3 .nav-pills .nav-link { font-size: calc(1.25625rem + 0.075vw) ; } }
 
-#section3 .nav-pills .nav-link.pink { background-image: url("../images/cloud-1.png"); }
+#section3 .nav-pills .nav-link.pink { background-image: url("../images/cloud-1.png"); -webkit-animation: cloud 10s linear infinite alternate; animation: cloud 10s linear infinite alternate; }
 
-#section3 .nav-pills .nav-link.blue { margin-top: 3rem; background-image: url("../images/cloud-2.png"); }
+#section3 .nav-pills .nav-link.blue { margin-top: 3rem; background-image: url("../images/cloud-2.png"); -webkit-animation: cloud2 8s linear infinite alternate; animation: cloud2 8s linear infinite alternate; }
 
-#section3 .nav-pills .nav-link.green { background-image: url("../images/cloud-3.png"); }
+#section3 .nav-pills .nav-link.green { background-image: url("../images/cloud-3.png"); -webkit-animation: cloud 9s linear infinite alternate; animation: cloud 9s linear infinite alternate; }
 
-#section3 .nav-pills .nav-link.orange { margin-top: 3rem; background-image: url("../images/cloud-4.png"); }
+#section3 .nav-pills .nav-link.orange { margin-top: 3rem; background-image: url("../images/cloud-4.png"); -webkit-animation: cloud2 10s linear infinite alternate; animation: cloud2 10s linear infinite alternate; }
 
-#section3 .nav-pills .nav-link.yellow { background-image: url("../images/cloud-5.png"); }
+#section3 .nav-pills .nav-link.yellow { background-image: url("../images/cloud-5.png"); -webkit-animation: cloud 8s linear infinite alternate; animation: cloud 8s linear infinite alternate; }
 
 #section3 .tab-content .cloud-big { background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; max-width: 548px; min-height: 325px; margin: 0 auto; color: rgba(0, 0, 0, 0.3); font-size: 1.375rem; padding: 3rem 6rem 1rem 4rem; line-height: 1; }
 
@@ -4017,9 +4017,25 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 @media (max-width: 991.98px) { #section3 { background-image: url("../images/bg-mb-4.jpg"); } }
 
+@-webkit-keyframes cloud { from { -webkit-transform: translateX(-30px); transform: translateX(-30px); }
+  to { -webkit-transform: translateX(30px); transform: translateX(30px); } }
+
+@keyframes cloud { from { -webkit-transform: translateX(-30px); transform: translateX(-30px); }
+  to { -webkit-transform: translateX(30px); transform: translateX(30px); } }
+
+@-webkit-keyframes cloud2 { from { -webkit-transform: translateX(30px); transform: translateX(30px); }
+  to { -webkit-transform: translateX(-30px); transform: translateX(-30px); } }
+
+@keyframes cloud2 { from { -webkit-transform: translateX(30px); transform: translateX(30px); }
+  to { -webkit-transform: translateX(-30px); transform: translateX(-30px); } }
+
 #section4 { background-image: url("../images/bg-sec4.jpg"); text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
 
-#section4 .bg-milk { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; }
+#section4 .bg-milk { position: absolute; bottom: 0; left: 0; width: 100%; height: auto; z-index: 0; }
+
+#section4 .bg-milk-mb { position: absolute; bottom: 0; left: 0; width: 100%; height: auto; z-index: 0; }
+
+#section4 .container { z-index: 1; }
 
 #section4 .section-title { margin-bottom: -2.5rem; }
 
@@ -4029,7 +4045,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 #section4 .section-right { text-align-last: left; }
 
-@media (max-width: 991.98px) { #section4 { background-image: url("../images/bg-mb-5.jpg"); } }
+@media (min-width: 992px) { #section4 .bg-milk-mb { display: none; } }
+
+@media (max-width: 991.98px) { #section4 { background-image: url("../images/bg-mb-5.jpg"); }
+  #section4 .bg-milk { display: none; } }
 
 html { overflow-x: hidden; }
 

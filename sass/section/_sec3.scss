@@ -40,9 +40,12 @@
         }
 
         &-dt {
+
             @include media-breakpoint-down(md) {
                 display: none;
             }
+
+
         }
 
         &-mb {
@@ -60,6 +63,7 @@
 
                     &[aria-expanded=true] {
                         background-size: 100% 100%;
+                        animation: none;
                     }
 
                     &-header {
@@ -84,14 +88,17 @@
 
                     &-pink {
                         background-image: url('../../dist/images/cloud-1.png');
+                        animation: cloud 10s linear infinite alternate;
 
                         &[aria-expanded=true] {
                             background-image: url('../../dist/images/cloud-focus-pink.png');
+
                         }
                     }
 
                     &-blue {
                         background-image: url('../../dist/images/cloud-2.png');
+                        animation: cloud2 10s linear infinite alternate;
 
                         &[aria-expanded=true] {
                             background-image: url('../../dist/images/cloud-focus-blue.png');
@@ -100,6 +107,7 @@
 
                     &-green {
                         background-image: url('../../dist/images/cloud-3.png');
+                        animation: cloud 8s linear infinite alternate;
 
                         &[aria-expanded=true] {
                             background-image: url('../../dist/images/cloud-focus-green.png');
@@ -108,6 +116,7 @@
 
                     &-orange {
                         background-image: url('../../dist/images/cloud-4.png');
+                        animation: cloud2 8s linear infinite alternate;
 
                         &[aria-expanded=true] {
                             background-image: url('../../dist/images/cloud-focus-orange.png');
@@ -116,6 +125,7 @@
 
                     &-yellow {
                         background-image: url('../../dist/images/cloud-5.png');
+                        animation: cloud 6s linear infinite alternate;
 
                         &[aria-expanded=true] {
                             background-image: url('../../dist/images/cloud-focus-yellow.png');
@@ -147,26 +157,33 @@
 
                 &.pink {
                     background-image: url("../images/cloud-1.png");
+                    animation: cloud 10s linear infinite alternate;
                 }
 
                 &.blue {
                     margin-top: 3rem;
                     background-image: url("../images/cloud-2.png");
+                    animation: cloud2 8s linear infinite alternate;
                 }
 
                 &.green {
                     background-image: url("../images/cloud-3.png");
+                    animation: cloud 9s linear infinite alternate;
                 }
 
                 &.orange {
                     margin-top: 3rem;
                     background-image: url("../images/cloud-4.png");
+                    animation: cloud2 10s linear infinite alternate;
                 }
 
                 &.yellow {
                     background-image: url("../images/cloud-5.png");
+                    animation: cloud 8s linear infinite alternate;
                 }
             }
+
+
         }
     }
 
@@ -220,5 +237,25 @@
 
     @include media-breakpoint-down(md) {
         background-image: url("../images/bg-mb-4.jpg");
+    }
+
+    @keyframes cloud {
+        from {
+            transform: translateX(-30px);
+        }
+
+        to {
+            transform: translateX(30px);
+        }
+    }
+
+    @keyframes cloud2 {
+        from {
+            transform: translateX(30px);
+        }
+
+        to {
+            transform: translateX(-30px);
+        }
     }
 }
