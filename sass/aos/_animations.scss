@@ -158,20 +158,32 @@ $aos-distance: 100px !default;
 
 [data-aos='flip-left'] {
   transform: perspective(2500px) rotateY(-100deg);
-  &.aos-animate {transform: perspective(2500px) rotateY(0);}
+
+  &.aos-animate {
+    transform: perspective(2500px) rotateY(0);
+  }
 }
 
 [data-aos='flip-right'] {
   transform: perspective(2500px) rotateY(100deg);
-  &.aos-animate {transform: perspective(2500px) rotateY(0);}
+
+  &.aos-animate {
+    transform: perspective(2500px) rotateY(0);
+  }
 }
 
 [data-aos='flip-up'] {
   transform: perspective(2500px) rotateX(-100deg);
-  &.aos-animate {transform: perspective(2500px) rotateX(0);}
+
+  &.aos-animate {
+    transform: perspective(2500px) rotateX(0);
+  }
 }
 
 [data-aos='flip-down'] {
   transform: perspective(2500px) rotateX(100deg);
-  &.aos-animate {transform: perspective(2500px) rotateX(0);}
+
+  &.aos-animate {
+    transform: perspective(2500px) rotateX(0);
+  }
 }

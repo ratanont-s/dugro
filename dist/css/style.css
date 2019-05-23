@@ -4077,3 +4077,7 @@ main { line-height: 1; }
 .btn-lazada:hover { -webkit-transform: scale(1.05); transform: scale(1.05); -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 @media (prefers-reduced-motion: reduce) { .btn-lazada:hover { -webkit-transition: none; transition: none; } }
+
+[data-aos="rotate-ac"] { -webkit-transform: rotate(180deg) scale(0); transform: rotate(180deg) scale(0); -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; transition-property: transform; transition-property: transform, -webkit-transform; }
+
+[data-aos="rotate-ac"].aos-animate { -webkit-transform: rotate(0deg) scale(1); transform: rotate(0deg) scale(1); }

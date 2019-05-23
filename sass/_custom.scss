@@ -61,3 +61,12 @@ main {
     @include transition($transition-base);
   }
 }
+
+[data-aos="rotate-ac"] {
+  transform: rotate(180deg) scale(0);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: rotate(0deg) scale(1);
+  }
+}

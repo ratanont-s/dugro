@@ -18,7 +18,11 @@
   <script src="./dist/js/slick.min.js"></script>
   <script>
     $(document).ready(function () {
-      AOS.init();
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: 'animated',
+      });
       // Add smooth scrolling to all links
       $("a.list-group-item").on('click', function (event) {
 
@@ -145,7 +149,7 @@
           <div class="col-lg-6">
             <div class="section-right">
               <div class="section-right-top">
-                <img src="./dist/images/rice-tray.png" data-aos="zoom-in" />
+                <img src="./dist/images/rice-tray.png" data-aos="rotate-ac" />
                 <div class="disk">
                   <span class="disk-item" data-aos="zoom-in-right" data-aos-delay="300"><img
                       src="./dist/images/disk1.png" /></span>
