@@ -117,8 +117,9 @@
                         }
 
                         .row {
+                            justify-content: center;
                             align-items: center;
-                            height: 100%;
+                            // height: 100%;
 
                             .col-7 {
                                 img {
@@ -229,8 +230,12 @@
     @include media-breakpoint-down(md) {
         background-image: url("../images/bg-mb-3.jpg");
 
+        .section-middle-circle {
+            margin-bottom: -60px;
+        }
+
         .section-middle .carousel-inner .carousel-item {
-            height: 370px;
+            height: 390px;
         }
     }
 }
