@@ -59,7 +59,7 @@
                     background-repeat: no-repeat;
                     background-position: center top;
                     background-size: auto 100%;
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1rem;
 
                     &[aria-expanded=true] {
                         background-size: 100% 100%;
@@ -79,11 +79,26 @@
                     }
 
                     &-body {
-                        padding-left: 2rem;
-                        padding-right: 3.5rem;
+                        // padding-left: 2rem;
+                        // padding-right: 3.5rem;
                         padding-bottom: 2.5rem;
                         font-size: 24px;
                         color: rgba(black, .3);
+
+                        ul {
+                            padding-left: 20px;
+                        }
+                    }
+
+                    &-bottom {
+                        display: block;
+                        position: relative;
+
+                        &::before {
+                            content: '< Back';
+                            color: white;
+                            font-size: 1rem;
+                        }
                     }
 
                     &-pink {

@@ -66,8 +66,8 @@
                 }
 
                 &-inner {
+
                     .carousel-item {
-                        min-height: 220px;
                         background-repeat: no-repeat;
                         background-position: center top;
                         background-size: 100% 100%;
@@ -228,5 +228,9 @@
 
     @include media-breakpoint-down(md) {
         background-image: url("../images/bg-mb-3.jpg");
+
+        .section-middle .carousel-inner .carousel-item {
+            height: 370px;
+        }
     }
 }

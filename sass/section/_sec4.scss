@@ -3,8 +3,9 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
+    padding-bottom: 3rem;
 
     .bg-milk {
         position: absolute;

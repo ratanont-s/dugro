@@ -3,8 +3,7 @@
     background-position: center top;
     background-size: 100% 100%;
     min-height: 100vh;
-
-    overflow: hidden;
+    overflow-x: hidden;
 
     @include media-breakpoint-up(lg) {
         display: flex;
